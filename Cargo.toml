@@ -1,0 +1,20 @@
+[package]
+name = "lcbot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.57"
+rand = "0.8.5"
+discord = { git = "https://github.com/fanzeyi/discord-rs", features = [], default-features = false }
+tracing = "0.1.34"
+serde = { version = "1.0.136", features = ["derive"] }
+dotenv = "0.15.0"
+envy = "0.4.2"
+once_cell = "1.10.0"
+reqwest = { version = "0.11.12", features = ["json", "blocking"] }
+serde_json = "1.0.87"
+tl = "0.7.7"
+html-escape = "0.2.12"
