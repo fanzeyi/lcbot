@@ -8,6 +8,7 @@ mod config;
 
 fn main() {
     dotenv().ok();
+    tracing_subscriber::fmt::init();
 
     let config = envy::from_env::<Config>().expect("Failed to load config");
 
